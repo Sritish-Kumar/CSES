@@ -1,9 +1,11 @@
 # Number spiral
+# i couldnt make it more short. A wise man once said if your code is smaller and works fine then that is the best code. 
+# I know that, I gave it try and i just made it somehow work. It works but with the expense of time and memory. 
 
 rx=[]
 c=1
 rev=3
-for i in range(1,10,2):
+for i in range(1,24,2):
     l=[]
     for j in range(i):       # ------------ making the diagonal stretched element
         #print(c)
@@ -33,7 +35,7 @@ def ele():
 
 
 
-print(rx)
+#* print(rx)
 
 for i in range(len(rx)):
     zx=[]
@@ -47,12 +49,17 @@ for i in range(len(rx)):
 
     x=ele()
     zx+=x
-    print('*',zx)
+    #* print('*',zx)
     tx.append(zx)
-print(tx)
+#* print(tx)
 
-r1,c1=2,3
-
-print(tx[r1-1][c1-1])
+n=int(input())
+out=[]
+for i in range(n):
+    r1,*c1=list(map(int,input().strip().split(' ')))
+    c1=c1[0]
+    out.append(tx[r1-1][c1-1])
+for i in out:
+    print(i)
 
 
