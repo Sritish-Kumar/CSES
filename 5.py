@@ -37,9 +37,22 @@ print(rx)
 
 for i in range(len(rx)):
     zx=[]
-    zx.append(rx[i].pop())
+    t=0
+    while True:
+        try:
+            zx.append(rx[i].pop(t))
+        except:
+            break
+    #zx=zx[::-1]
+
     x=ele()
     zx+=x
     print('*',zx)
+    tx.append(zx)
+print(tx)
 
-    
+r1,c1=2,3
+
+print(tx[r1-1][c1-1])
+
+
