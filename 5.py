@@ -51,7 +51,7 @@ for i in range(len(rx)):
     zx+=x
     #* print('*',zx)
     tx.append(zx)
-#* print(tx)
+#* print(tx)    # -------- matrix made 
 
 n=int(input())
 out=[]
