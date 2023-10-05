@@ -1,6 +1,6 @@
 # CSES
 
-It has some introductory cses probelem sets.
+It has some introductory cses probelem sets solutions.
 These are all basic algo based problems.
 
 lang: Python
