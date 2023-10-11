@@ -1,17 +1,31 @@
-# Bit strings. 
-# Time limit will exceed in cses. If u try the experimental value 2**n
-# It works fine upto a certain value. After that i think the sequence changes or something like that. It will give u wrong ans. 
+# Bit strings.
 
 n=int(input())
-'''l=1
-i=0
-c=0                         # all the bin value under the reqired len
+
+# << -------- STRING METHOD -------- >> 
+
+# You can try the string method where we generate the bin of all number one by one and check their len(),
+# if the length is greater than n then we break. 
+
+# Wont work on CSES. As it will take a lot of time to just go through all the numbers. 
+# Lets say you want to find all binary numbers of 50 bit. Which would be 1125899906842624, It simple wont work in the time frame.  
+'''
+l=1
+i=0                        
 while l<=n:
     print(i,bin(i)[2:])     
     i+=1
-    c+=1
     if len(bin(i)[2:])>l:
         l=len(bin(i)[2:])
-print(c)'''
+print(i)
 
-print(2**n)         # experimentally found
+'''
+
+# << -------- EXPERIMENTAL METHOD -------- >>
+
+# If you see any binary number can have only 2 digits 1 or 0
+# Lets say you want to print all the binary numbers of length 5.
+# That will include all binary numbers of length 1,2,3,4 and 5.
+# and all binary numbers can have only 0 or 1. That makes it 2*2*2*2*2 possible numbers. 
+
+print(2**n%(10**9+7))         # Since it is asked to print in %(10^9+7) format
