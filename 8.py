@@ -4,11 +4,11 @@ n=int(input())
 
 # << -------- STRING METHOD -------- >> 
 
-# You can try the string method where we generate the bin of all number one by one and check their len(),
+# You can try the string method where we generate the bin() of all number one by one and check their len(),
 # if the length is greater than n then we break. 
 
 # Wont work on CSES. As it will take a lot of time to just go through all the numbers. 
-# Lets say you want to find all binary numbers of 50 bit. Which would be 1125899906842624, It simple wont work in the time frame.  
+# Lets say you want to find all binary numbers of 50 bit. Which would be 1125899906842624, It simply wont work in the time frame.  
 '''
 l=1
 i=0                        
