@@ -12,51 +12,51 @@ else:
     out=[]
     i=1
     rev=0
-    while True:
-        if n%2==0:
-            #print('Even')
+    
+    if n%2==0:
+        #print('Even')
 
-            echk=int(n/2)
-            echk=[echk,echk+1]
-            #print(echk)
+        echk=int(n/2)
+        echk=[echk,echk+1]
+        #print(echk)
 
-            while True:
-                if i in echk and n in echk:
-                    out.insert(0,echk.pop())
-                    out.append(echk.pop())
-                    break
+        while True:
+            if i in echk and n in echk:
+                out.insert(0,echk.pop())
+                out.append(echk.pop())
+                break
 
-                if rev==0:
-                    out.append(i)
-                    rev=1
-                    i+=1
-                elif rev==1:
-                    out.append(n)
-                    n-=1
-                    rev=0
+            if rev==0:
+                out.append(i)
+                rev=1
+                i+=1
+            elif rev==1:
+                out.append(n)
+                n-=1
+                rev=0
 
-        else:
-            #print('Odd')
-            ochk=int((n+1)/2)
-            #print(ochk)
+    else:
+        #print('Odd')
+        ochk=int((n+1)/2)
+        #print(ochk)
 
-            while True:
+        while True:
 
-                if i==ochk and n==ochk:
-                    out.insert(0,ochk)
-                    break
+            if i==ochk and n==ochk:
+                out.insert(0,ochk)
+                break
                 
-                elif rev==0:
-                    out.append(i)
-                    i+=1
-                    rev=1
+            elif rev==0:
+                out.append(i)
+                i+=1
+                rev=1
                     
-                elif rev==1:
-                    out.append(n)
-                    n-=1
-                    rev=0
+            elif rev==1:
+                out.append(n)
+                n-=1
+                rev=0
 
-        break
+    
 
     for i in out:
         print(i, end=' ')

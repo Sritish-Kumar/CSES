@@ -1,6 +1,8 @@
 # Plaindome re-order
-# ponits: 2 odd numebrs wont work
-# Works  fine
+
+# Note: If u find any letter occuring odd number of times is greater than 1. No solution
+# String with 1 odd letter will work. The odd one will take the middle spot and all other even letters can be spread both 
+# side of the string. 
 
 
 import collections
@@ -9,7 +11,7 @@ s=input().strip()
 l=dict(collections.Counter(s))          # If any two letter are in odd number you can't arrange them  in plaindome
 c=0
 for i in l.values():
-    if i%2==0:
+    if i%2==0:          # Counting the number of odd numbered letters
         continue
     else:
         c+=1

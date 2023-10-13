@@ -3,9 +3,9 @@
 n=int(input())
 x=list(map(int,input().strip().split(' ')))  # [6,10,4,10,2,8,9,2,7,7]  
 
-c=0
-t=0
-max=0
+c=0  # cursor
+t=0  # turn
+max=0  # temp max
 
 for i in range(len(x)):
     if max<=x[i]:

@@ -33,3 +33,19 @@ print(c)
 print(time.time()-start)
 
 
+# ------------- > working
+
+n=int(input().strip())
+i=5
+c=0
+while True:
+    if n//i==0:
+        break
+    #print(n,i,c)
+    c+=n//i
+    i*=5
+    
+    
+print(c)
+
+
