@@ -1,5 +1,8 @@
 # Graay code
 
+# Use binary no. XOR ----> Gray code
+
+#( Not working)
 n=int(input())
 l=1
 i=0
