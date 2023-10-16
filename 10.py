@@ -37,3 +37,7 @@ else:
             
     print(''.join(rx+od),end='')
     print(''.join(tx[::-1]))
+
+# Dont use this method. It works fine but is silly. U dont have to do much labour. U can just seperate the number into odd and even
+# and stick them together.
+# It just didnt click me. 

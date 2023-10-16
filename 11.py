@@ -1,5 +1,5 @@
 # Creating Strings
-# Time limit exceed for larger numbers. Other than that works fine
+
 import itertools
 
 s=sorted(input())
