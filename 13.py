@@ -1,4 +1,7 @@
-# digits
+# Digits
+# Isnt working for larger numbers. 
+# Isnt efficient. Try something other than strings. Mathmatecially calculating will work.
+
 s=""
 num=[]
 r=int(input().strip())
