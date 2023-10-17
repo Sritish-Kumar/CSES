@@ -2,7 +2,7 @@
 
 # Use binary no. XOR ----> Gray code
 
-#( Not working)
+#(working)
 n=int(input())
 l=1
 i=0
